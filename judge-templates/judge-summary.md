@@ -39,6 +39,7 @@ You only evaluate the provided summary against the rubric.
 
 # Output Format 
 Return only valid JSON in the following structure:
+
 {
   "structure_format": 0,
   "data_grounding": 0,
