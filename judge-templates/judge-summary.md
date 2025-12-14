@@ -48,7 +48,9 @@ Return only valid JSON in the following structure:
 # Output Scoring Guidelines
 structure_format (0–10)
 Section names, bullet count, and required structure
+
 data_grounding (0–10)
 Correct use of provided inputs
+
 general_score (0–10)
 Overall quality
