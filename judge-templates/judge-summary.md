@@ -13,11 +13,14 @@ You will receive the following data:
 - `nps_score`: Most recent Net Promoter Score
 - `scat_score`: Success Confidence & Adoption Trend (0-100)
 - `risk_engine_score`: AI-predicted churn risk (0-1)
+
  **categorized_metrics**
 - Correct business-defined interpretations of the numeric metrics.
 - These labels represent the true meaning of the numeric metrics and are the primary basis for your reasoning.
+
  **crm_notes**
 - `crm_notes`: Qualitative notes from the Customer Success Manager (CSM)
+
  **feedback_summary**
 - `feedback_summary`: Key customer feedback or feature requests
 Generated summary: The summary to evaluate
