@@ -1,7 +1,7 @@
 # QBR Prompt Templates
 A  collection of production-ready prompt templates used in an AI-powered Quarterly Business Review (QBR) automation.
 
-## Generation Prompts (GPT-5.1)
+## Generation Prompts
 Used to generate individual sections of the QBR.
 
 ### Model used:
