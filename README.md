@@ -6,6 +6,7 @@ Used to generate individual sections of the QBR.
 
 ### Model used:
 GPT-5.1 
+
 Estimated cost:
 ~2,000 tokens per full QBR workflow (all sections combined)
 
