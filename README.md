@@ -40,7 +40,6 @@ A static internal document containing:
 - Official definitions of QBR metrics
 - Threshold-based interpretation rules
 - Customer Success policies and guidelines
-- 
 ### The document is ingested once, chunked, embedded, and queried at runtime using semantic search.
 
 
