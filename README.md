@@ -15,7 +15,7 @@ Used for LLM-as-a-Judge evaluation of the generated content.
 ### Model used:
 GPT-4.1-mini 
 
-### Prompts Tracking 
+### Quality Tracking 
 Persistent quality tracking in production workflows. In the live automation:
 - The generated QBR sections
 - The judge score and evaluation feedback
@@ -23,10 +23,26 @@ are stored in PostgreSQL (Neon).
 
 ### How These Prompts Are Used
 
-- Loaded dynamically into an n8n workflow
-- Injected with runtime data (metrics, notes, feedback)
+- Injected with runtime data 
 - Executed as independent LLM calls
 - Evaluated via a dedicated judge step
-- Iterated safely using prompt versioning
+- Iterated using prompt versioning
+
+# AI Agent with Knowledge Base (RAG)
+
+The system includes a tool-enabled AI agent that provides conversational access to data.
+The agent combines:
+- Structured account data retrieved from PostgreSQL via tools
+- An authoritative knowledge base (company policies, metric definitions, and interpretation rules) indexed using Retrieval-Augmented Generation.
+
+## Knowledge Base
+A static internal document containing:
+- Official definitions of QBR metrics
+- Threshold-based interpretation rules
+- Customer Success policies and guidelines
+- 
+### The document is ingested once, chunked, embedded, and queried at runtime using semantic search.
+
+
 
 
