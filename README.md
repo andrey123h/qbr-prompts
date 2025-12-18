@@ -1,5 +1,4 @@
-# QBR Prompt Templates
-A  collection of production-ready prompt templates used in an AI-powered Quarterly Business Review (QBR) automation.
+This repo is a collection of prompt templates used in an AI-powered Quarterly Business Review automation.
 
 ## Generation Prompts
 Used to generate individual sections of the QBR.
