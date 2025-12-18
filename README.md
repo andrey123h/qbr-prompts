@@ -28,19 +28,32 @@ are stored in PostgreSQL (Neon).
 - Evaluated via a dedicated judge step
 - Iterated using prompt versioning
 
-# AI Agent with Knowledge Base (RAG)
+# AI Agent 
 
 The system includes a tool-enabled AI agent that provides conversational access to data.
 The agent combines:
 - Structured account data retrieved from PostgreSQL via tools
-- An authoritative knowledge base (company policies, metric definitions, and interpretation rules) indexed using Retrieval-Augmented Generation.
+- An authoritative knowledge base (company policies, metric definitions, and interpretation rules)
+
+## Retrieval-Augmented Generation 
+
+The knowledge base is integrated using a RAG pipeline to ensure grounded and accurate responses.
+
+- An internal source document is ingested and processed offline
+- Content is chunked and converted into semantic embeddings
+- Embeddings are stored in a vector store and queried at runtime
+- Relevant chunks are retrieved dynamically and injected into the agent’s context
+
+This design enables up-to-date, traceable answers without fine-tuning the underlying language model.
+
+- Semantic embeddings are generated using OpenAI’s embedding model; `text-embedding-3-small`
 
 ## Knowledge Base
-A static internal document containing:
+An internal document containing:
 - Official definitions of QBR metrics
 - Threshold-based interpretation rules
 - Customer Success policies and guidelines
-### The document is ingested once, chunked, embedded, and queried at runtime using semantic search.
+
 
 
 
