@@ -41,9 +41,10 @@ The knowledge base is integrated using a RAG pipeline to ensure grounded and acc
 
 - An internal source document is ingested and processed offline
 - Content is chunked and converted into semantic embeddings
-Semantic embeddings are generated using OpenAI’s embedding model; `text-embedding-3-small`
 - Embeddings are stored in a vector store and queried at runtime
 - Relevant chunks are retrieved dynamically and injected into the agent’s context
+
+Semantic embeddings are generated using OpenAI’s embedding model; `text-embedding-3-small`
 
 This design enables up-to-date, traceable answers without fine-tuning the underlying language model.
 
